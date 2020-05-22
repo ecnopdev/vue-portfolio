@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    Jose Mari Ponce - Portfolio Site
+    <Hello-World
+      msg="Jose Mari Ponce - Portfolio Site"
+    ></Hello-World>
   </div>
 </template>
 
 <script>
+import HelloWorld from '@/components/HelloWorld'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components : {
+    HelloWorld
+  }
 }
 </script>
 

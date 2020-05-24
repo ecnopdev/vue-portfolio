@@ -1,6 +1,5 @@
 # Jose Mari Ponce - Portfolio Site
 
-## Technoologies Used
+## Built using:
 - Vue.js
-- Vuetify
-- Babel
+- Vuetify 

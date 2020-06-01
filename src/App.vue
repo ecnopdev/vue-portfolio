@@ -15,7 +15,7 @@
       </div>
 
       <v-spacer></v-spacer>
-
+      <transition name="slide-fade">
       <div class="d-none d-sm-flex flex-row nav-links align-center">
         <div>
           <span>01.</span> About
@@ -33,6 +33,7 @@
           Resume
         </v-btn>
       </div>
+      </transition>
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="toggleDrawer()"/>
     </v-app-bar>
 
@@ -44,13 +45,26 @@
   </v-app>
 </template>
 
-<style scoped>
+<style>
 .nav-links div {
   margin-left: 16px;
 }
 .nav-links span {
   color: green;
   font-weight: bold;
+}
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 0.8s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
 }
 </style>
 

@@ -1,6 +1,6 @@
 <template>
   <v-container fluid style="scroll-snap-align:start;height:100vh" class="d-flex align-center">
-    <v-row class="justify-middle">
+    <v-row>
       <v-col cols="1"></v-col>
       <v-col cols="10">
         <v-row>
@@ -59,19 +59,6 @@
 }
 .email-address a {
   text-decoration: none;
-}
-/* Enter and leave animations can use different */
-/* durations and timing functions.              */
-.slide-fade-enter-active {
-  transition: all 0.8s ease;
-}
-.slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
 }
 </style>
 

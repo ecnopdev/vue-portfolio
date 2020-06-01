@@ -1,8 +1,6 @@
 <template>
-  <v-card>
-    <v-navigation-drawer app temporary right v-model="drawer">
-      <v-divider></v-divider>
-
+  <v-card dark>
+    <v-navigation-drawer app temporary right v-model="drawer" class="d-flex flex-column align-center">
       <v-list class="text-center">
         <v-list-item>
           <v-list-item-content>
@@ -22,7 +20,7 @@
         <v-list-item justify-content>
           <v-list-item-content >
             <v-btn
-              green
+              color="green"
               outlined
               href="Jose-Mari-Ponce-resume.pdf"
               target="_bank"

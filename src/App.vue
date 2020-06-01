@@ -35,6 +35,7 @@
       </div>
       </transition>
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="toggleDrawer()"/>
+      
     </v-app-bar>
 
     <v-content style="scroll-snap-type:y proximity">

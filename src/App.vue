@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar fixed app color="white" flat>
+    <v-app-bar fixed app color="white" flat v-if="$route.name != 'loading'">
       <div class="d-flex align-center">
         <v-btn href="https://ecnop.dev" icon>
         <v-img
@@ -35,11 +35,10 @@
       </div>
       </transition>
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="toggleDrawer()"/>
-      
     </v-app-bar>
 
     <v-content style="scroll-snap-type:y proximity">
-      <Home />
+      <router-view></router-view>
     </v-content>
 
     <RightNav ref="rightNav"/>
@@ -71,13 +70,11 @@
 
 <script>
 import RightNav from '@/components/RightNav'
-import Home from "./components/Home";
 
 export default {
   name: "App",
   components: {
-    RightNav,
-    Home
+    RightNav
   },
 
   data: () => ({

@@ -11,6 +11,7 @@
     "core-js": "^3.6.4",
     "stylus-loader": "^3.0.2",
     "vue": "^2.6.11",
+    "vue-router": "^3.3.2",
     "vuetify": "^2.2.11"
   },
   "devDependencies": {

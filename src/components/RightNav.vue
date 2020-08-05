@@ -22,9 +22,9 @@
             <v-btn
               color="green"
               outlined
-              href="Jose-Mari-Ponce-resume.pdf"
+              href="Jose-Mari-Ponce-CV.pdf"
               target="_bank"
-            >Resume</v-btn>
+            >CV</v-btn>
           </v-list-item-content>
         </v-list-item>
       </v-list>

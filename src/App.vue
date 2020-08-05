@@ -29,8 +29,8 @@
         <div>
           <span>04.</span> Contact
         </div>
-        <v-btn class="ml-3" green outlined href="Jose-Mari-Ponce-resume.pdf" target="_bank">
-          Resume
+        <v-btn class="ml-3" green outlined href="Jose-Mari-Ponce-CV.pdf" target="_bank">
+          CV
         </v-btn>
       </div>
       </transition>

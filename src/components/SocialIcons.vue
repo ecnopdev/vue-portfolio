@@ -23,6 +23,12 @@
   text-decoration: none;
 }
 
+@media only screen and (max-height:480px){
+  .social-icon{
+    font-size:20px !important;
+  }
+}
+
 @keyframes animate {
   0% {
     opacity: 0;

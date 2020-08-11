@@ -1,66 +1,85 @@
 <template>
-    <span class="type-text reverse-typewrite">{{message}}</span>
+  <span class="type-text reverse-typewrite">{{message}}</span>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      message: 'ecnoP'
+      message: "ecnoP"
     };
   },
-  mounted: function(){
-      setTimeout(()=>{
-          this.message = 'Ponce';
-      },2200)
+  watch: {
+    message: {
+      handler(newVal) {
+        if (newVal === "Ponce") {
+          setTimeout(() => {
+            this.message = "ecnoP";
+          }, 4000);
+        } else {
+          setTimeout(() => {
+            this.message = "Ponce";
+          }, 4000);
+        }
+      },
+      immediate: true
+    }
   }
 };
 </script>
 
-<style scoped>  
-.type-text{
-    width:0em;
-    display:inline-block;
-    position:relative;
-    overflow:hidden;
-    white-space:nowrap;
-    border-right: 2px solid rgba(0,0,0,.75);
-    top:7px
+<style scoped>
+.type-text {
+  width: 0em;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  top: 7px;
 }
-  
- .reverse-typewrite{
-    animation: typewriter 3s steps(5) normal forwards,
-               cursorBlink 600ms steps(60) infinite normal;
+
+@media only screen and (max-width:599px){
+  .type-text {
+    top:8px
   }
-  
-  @keyframes typewriter {    
-    0%{
-        width:0em;
-    }
-    10%{
-        width:2.9em;
-    }
-    60%{
-        width:2.9em;
-    }
-    70%{
-        width:0em;
-    }
-    85%{
-        width:2.9em;
-    }
-    90%{
-        width:2.9em; 
-    }
-    100%{
-        width:2.9em;
-    }
-    
+}
+
+.reverse-typewrite {
+  animation: typewriter 8s steps(5) infinite forwards,
+    cursorBlink 800ms steps(80) infinite normal;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0em;
   }
-  
-  @keyframes cursorBlink{
-    from {border-right-color:rgba(0,0,0,.75)}
-    to {border-right-color:transparent}
+  10% {
+    width: 3em;
   }
-  
+  40% {
+    width: 3em;
+  }
+  50% {
+    width: 0em;
+  }
+  60% {
+    width: 3em;
+  }
+  90% {
+    width: 3em;
+  }
+  100% {
+    width: 0em;
+  }
+}
+
+@keyframes cursorBlink {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 </style>

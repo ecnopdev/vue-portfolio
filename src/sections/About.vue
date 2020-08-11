@@ -1,7 +1,7 @@
 <template>
   <v-container fluid style="scroll-snap-align:start;height:90vh">
     <v-row>
-      <v-col cols="12" offset="1">
+      <v-col cols="11" offset="1">
         <h1 id="about">About</h1>
       </v-col>
     </v-row>
@@ -18,7 +18,7 @@
                 ></v-img>
               </div>
             </v-col>
-            <v-col cols="12" md="8">
+            <v-col cols="12" md="8" class="px-xs-0">
               <ul>
                 <li>
                   Hi, my name <b>Jose</b>. Sometimes people call me <b>JM</b> or
@@ -34,24 +34,24 @@
                   <b>Node.js</b> and <b>Google Cloud Platform</b>.
                 </li>
                 <li>
-                  I'm got my Bachelor's Degree in <b>Computer Scientist</b> at
+                  I got my Bachelor's Degree in <b>Computer Science</b> at
                   <b>De La Salle University Manila</b>, majoring Software
                   Technology.
                 </li>
                 <li>
-                  I'm a gamer who likes multi-player, role-playing, and co-op
+                  I'm a <b>gamer</b> who likes multi-player, role-playing, and co-op
                   strategy games.
                 </li>
                 <li>
-                  I'm a puzzle junkie especially when placed in a competitive
+                  I'm a <b>puzzle junkie</b> especially when placed in a competitive
                   environment.
                 </li>
                 <li>
-                  I'm an amateur multi-instrumentatlist, who plays basic
+                  I'm an <b>amateur multi-instrumentatlist</b>, who plays basic
                   keyboards, guitar, harmonica and flute.
                 </li>
                 <li>
-                  And to top all that, I'm an influencer of two beautiful kids
+                  And to top all that, I'm a <b>dad</b> and influencer of <b>two beautiful children</b>
                   whom I teach crazy things about life.
                 </li>
               </ul>

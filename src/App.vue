@@ -37,9 +37,9 @@
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="toggleDrawer()"/>
     </v-app-bar>
 
-    <v-content style="scroll-snap-type:y proximity">
+    <v-main style="scroll-snap-type:y proximity">
       <router-view></router-view>
-    </v-content>
+    </v-main>
 
     <RightNav ref="rightNav"/>
   </v-app>
@@ -48,10 +48,14 @@
 <style>
 .nav-links div {
   margin-left: 16px;
+  cursor:pointer
 }
 .nav-links span {
   color: green;
   font-weight: bold;
+}
+.nav-links div:hover {
+  text-decoration: underline;
 }
 /* Enter and leave animations can use different */
 /* durations and timing functions.*/

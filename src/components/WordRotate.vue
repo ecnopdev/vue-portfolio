@@ -20,8 +20,15 @@ export default {
   position:relative;
   display:inline-block;
   overflow:visible;
+  width:auto;
   width:450px;
   height:1em;
+}
+
+@media only screen and (max-width: 959px){
+  .rotate-container {
+    width:100%;
+  }
 }
 
 .rotate-text {

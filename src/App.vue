@@ -17,8 +17,8 @@
       <v-spacer></v-spacer>
       <transition name="slide-fade">
       <div class="d-none d-sm-flex flex-row nav-links align-center">
-        <div>
-          <span>01.</span> About
+        <div @click="$vuetify.goTo('#about', scrollOptions)">
+          <span>01.</span> About 
         </div>
         <div>
           <span>02.</span> Experience
@@ -54,7 +54,7 @@
   font-weight: bold;
 }
 /* Enter and leave animations can use different */
-/* durations and timing functions.              */
+/* durations and timing functions.*/
 .slide-fade-enter-active {
   transition: all 0.8s ease;
 }
@@ -78,7 +78,11 @@ export default {
   },
 
   data: () => ({
-    //
+    scrollOptions:{
+      duration: 300,
+      offset: 0,
+      easing: 'easeInOutCubic'
+    }
   }),
 
   methods : {

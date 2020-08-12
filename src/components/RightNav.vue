@@ -29,21 +29,12 @@
             <v-btn color="green" outlined href="Jose-Mari-Ponce-CV.pdf" target="_bank">CV</v-btn>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item>
-          <v-list-item-content>
-            <div width="100px">
-            <SocialIcons />
-            </div>
-          </v-list-item-content>
-        </v-list-item>
       </v-list>
     </v-navigation-drawer>
   </v-card>
 </template>
 
 <script>
-const SocialIcons = () => import('@/components/SocialIcons.vue')
-
 export default {
   data() {
     return {
@@ -60,9 +51,6 @@ export default {
         easing: "easeInOutCubic"
       }
     };
-  },
-  components: {
-    SocialIcons
   },
   methods: {
     toggle() {

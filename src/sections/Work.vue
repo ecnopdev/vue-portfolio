@@ -1,19 +1,21 @@
 <template>
   <BaseSection>
     <template #header>
-      <h1 id="work">03. Some things that I've built</h1>
+      <div id="about" class="text-h5 text-sm-h4">
+        <span class="green--text">03.</span>
+        Some things that I've built.
+      </div>
     </template>
     <template #content>
-      <v-list two-lines>
+      <v-list two-lines avatar>
         <v-list-item v-for="(project,i) in projects" :key="i">
+          <v-list-item-avatar>
+              <v-icon>fa-code</v-icon>
+          </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>{{project.name}}</v-list-item-title>
+            <v-list-item-title class="title">{{project.name}}</v-list-item-title>
             <v-list-item-subtitle>{{project.techStack}}</v-list-item-subtitle>
           </v-list-item-content>
-
-          <!-- <v-list-item-action>
-            <v-icon>fa-external-link-alt</v-icon>
-          </v-list-item-action> -->
         </v-list-item>
       </v-list>
     </template>

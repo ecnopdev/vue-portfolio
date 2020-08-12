@@ -1,7 +1,10 @@
 <template>
     <BaseSection>
         <template #header>
-            <h1 id="experience">02. Where I've worked</h1>
+            <div id="experience" class="text-h5 text-sm-h4">
+        <span class="green--text">02.</span>
+        Where I've worked
+      </div>
         </template>
         <template #content>
             <Timeline />

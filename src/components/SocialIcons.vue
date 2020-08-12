@@ -3,18 +3,26 @@
     <a
       v-for="(item,index) in icons"
       :key="index"
-      class="social-icon-container"
+      class="social-icon-container my-2 mx-1"
       target="_blank"
       :href="item.link"
     >
-      <v-icon :title="item.name" class="social-icon mb-5" size="30">{{item.icon}}</v-icon>
+      <v-icon :title="item.name" class="social-icon" size="30">{{item.icon}}</v-icon>
     </a>
   </div>
 </template>
 <style scoped>
+.social-links-container{
+  width:60px;
+}
+.social-icon {
+  top:10px;
+  position:relative;
+}
+
 .social-icon:hover{
     color:#4fc08d;
-    font-size:45px !important;
+    top:2px;
 }
 
 .social-icon-container {
@@ -45,37 +53,37 @@ export default {
       icons: [ 
         {
           name: "LinkedIn",
-          icon: "fa-linkedin",
+          icon: "fab fa-linkedin",
           link: "https://www.linkedin.com/in/ecnopdev/"
         },
         {
           name: "Github",
-          icon: "fa-github",
+          icon: "fab fa-github",
           link: "https://github.com/ecnopdev"
         },
         {
           name: "Stack Overflow",
-          icon: "fa-stack-overflow",
+          icon: "fab fa-stack-overflow",
           link: "https://stackoverflow.com/users/11275461/ecnopdev"
         },
         {
           name: "Twitter",
-          icon: "fa-twitter",
+          icon: "fab fa-twitter",
           link: "https://twitter.com/ecnopdev"
         },
         {
           name: "Instagram",
-          icon: "fa-instagram",
+          icon: "fab fa-instagram",
           link: "https://www.instagram.com/ecnopdev/"
         },
         {
           name: "Medium",
-          icon: "fa-medium",
+          icon: "fab fa-medium",
           link: "https://medium.com/@ecnopdev"
         },
         {
           name: "Codepen",
-          icon: "fa-codepen",
+          icon: "fab fa-codepen",
           link: "https://codepen.io/ecnopdev"
         }
       ]

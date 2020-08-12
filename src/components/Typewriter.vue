@@ -6,7 +6,7 @@
 export default {
   data() {
     return {
-      message: "ecnoP"
+      message: "Ponce"
     };
   },
   watch: {
@@ -15,11 +15,11 @@ export default {
         if (newVal === "Ponce") {
           setTimeout(() => {
             this.message = "ecnoP";
-          }, 4000);
+          }, 4020);
         } else {
           setTimeout(() => {
             this.message = "Ponce";
-          }, 4000);
+          }, 4020);
         }
       },
       immediate: true

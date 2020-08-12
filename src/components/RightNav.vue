@@ -10,15 +10,15 @@
       <v-list class="text-center">
         <v-list-item>
           <v-list-item-content>
-            <v-btn @click="drawer = !drawer" icon>
-              <v-icon>mdi-close</v-icon>
-            </v-btn>
+              <div>
+              <v-icon @click="drawer = !drawer">mdi-close</v-icon>
+              </div>
           </v-list-item-content>
         </v-list-item>
         <v-list-item
           v-for="item in items"
           :key="item.title"
-          @click="$vuetify.goTo(item.target, scrollOptions)"
+          @click="navigate(item.target)"
         >
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -29,20 +29,30 @@
             <v-btn color="green" outlined href="Jose-Mari-Ponce-CV.pdf" target="_bank">CV</v-btn>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <div width="100px">
+            <SocialIcons />
+            </div>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
   </v-card>
 </template>
 
 <script>
+const SocialIcons = () => import('@/components/SocialIcons.vue')
+
 export default {
   data() {
     return {
       drawer: false,
       items: [
         { title: "About", icon: "mdi-home-city", target: "#about" },
-        { title: "Experience", icon: "mdi-account", target: "#about" },
-        { title: "Work", icon: "mdi-account-group-outline", target: "#about" }
+        { title: "Experience", icon: "mdi-account", target: "#experience" },
+        { title: "Work", icon: "mdi-account-group-outline", target: "#work" },
+        { title: "Contact", icon: "mdi-account-group-outline", target: "#contact" }
       ],
       scrollOptions: {
         duration: 300,
@@ -51,9 +61,16 @@ export default {
       }
     };
   },
+  components: {
+    SocialIcons
+  },
   methods: {
     toggle() {
       this.drawer = !this.drawer;
+    },
+    navigate(target){
+      this.$vuetify.goTo(target, this.scrollOptions);
+      this.toggle();
     }
   }
 };

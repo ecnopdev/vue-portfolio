@@ -5,3 +5,8 @@ Official url - https://ecnop.dev
 - Vue.js
 - Vuetify 
 
+## Highlights
+- Typewriter Animation Effect
+- Word Rotation Animation Effect
+- Fontawesome 5
+

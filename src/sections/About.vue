@@ -1,13 +1,9 @@
 <template>
-  <v-container fluid style="scroll-snap-align:start;height:90vh">
-    <v-row>
-      <v-col cols="11" offset="1">
-        <h1 id="about">About</h1>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="1"></v-col>
-      <v-col cols="10">
+  <BaseSection>
+        <template #header>
+        <h1 id="about">01. About Me</h1>
+        </template>
+        <template #content>
         <v-container>
           <v-row>
             <v-col cols="12" md="4" class="d-flex flex-row align-center justify-center">
@@ -51,17 +47,15 @@
                   keyboards, guitar, harmonica and flute.
                 </li>
                 <li>
-                  And to top all that, I'm a <b>dad</b> and influencer of <b>two beautiful children</b>
+                  And to top all that, I'm a <b>dad</b> two beautiful children 
                   whom I teach crazy things about life.
                 </li>
               </ul>
             </v-col>
           </v-row>
         </v-container>
-      </v-col>
-      <v-col cols="1"></v-col>
-    </v-row>
-  </v-container>
+      </template>
+      </BaseSection>
 </template>
 <style>
 .profile-picture-container{
@@ -73,7 +67,11 @@
 }
 </style>
 <script>
+const BaseSection = () => import('@/sections/BaseSection')
 export default {
   name: "About",
+  components: {
+    BaseSection
+  }
 };
 </script>

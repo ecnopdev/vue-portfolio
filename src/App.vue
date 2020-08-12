@@ -20,13 +20,13 @@
         <div @click="$vuetify.goTo('#about', scrollOptions)">
           <span>01.</span> About 
         </div>
-        <div>
+        <div @click="$vuetify.goTo('#experience', scrollOptions)">
           <span>02.</span> Experience
         </div>
-        <div>
+        <div @click="$vuetify.goTo('#work', scrollOptions)">
           <span>03.</span> Work
         </div>
-        <div>
+        <div @click="$vuetify.goTo('#contact', scrollOptions)">
           <span>04.</span> Contact
         </div>
         <v-btn class="ml-3" green outlined href="Jose-Mari-Ponce-CV.pdf" target="_bank">
@@ -83,7 +83,7 @@ export default {
 
   data: () => ({
     scrollOptions:{
-      duration: 300,
+      duration: 600,
       offset: 0,
       easing: 'easeInOutCubic'
     }

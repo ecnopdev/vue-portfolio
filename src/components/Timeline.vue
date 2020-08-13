@@ -58,7 +58,7 @@ export default {
         company: "Singapore Press Holdings",
         position: "Software Engineer",
         description:
-          "Design, develop and implement enterprise productivity tools for the newsroom",
+          "Design, develop and implement enterprise productivity tools and cloud-native applications for the newsroom. ",
         skills: [
           {
             icon: "fab fa-vuejs",
@@ -80,7 +80,7 @@ export default {
         company: "Orica",
         position: "Software Engineer",
         description:
-          "Global applications support for Lotus Domimo applications",
+          "Global applications developer and support for Lotus Domino applications.",
         skills: [{ icon: "fab fa-java", name: "Java Server Faces (Xpages)" }],
         isSmall: false
       },
@@ -90,7 +90,7 @@ export default {
         company: "Sun Life of Canada Philippines",
         position: "Software Engineer",
         description:
-          "Design, develop and implement a multi-language policy contract generator.",
+          "Design, develop, implement and maintain a multi-language policy contract generator.",
         skills: [{ icon: "fab fa-java", name: "Java Server Faces (Xpages)" }],
         isSmall: false
       },
@@ -100,7 +100,7 @@ export default {
         company: "Abbott Laboratories",
         position: "Software Engineer",
         description:
-          "Design, develop and implement inventory and workflow applications",
+          "Design, develop, implement and maintain workflow applications to support the parmaceutical operations.",
         skills: [{ icon: "fab fa-java", name: "Java Server Faces (Xpages)" }],
         isSmall: false
       },
@@ -109,7 +109,7 @@ export default {
         year: "2008",
         company: "Softweb Consulting",
         position: "Software Engineer",
-        description: "Design, develop and implement for various ",
+        description: "Design, develop and implement for complex workflow applications for a wide-range of industries such as Manufacturing, Banking, Human Resources, and Education.",
         skills: [
           { icon: "fab fa-java", name: "Java Server Faces (Xpages)" },
           { icon: "fab fa-php", name: "Codeigniter" },

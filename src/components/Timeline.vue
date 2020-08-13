@@ -8,7 +8,7 @@
               v-for="(experience, i) in experiences"
               :key="i"
               :color="experience.color"
-              small
+              :small="experience.isSmall"
             >
               <template v-slot:opposite>
                 <span
@@ -62,16 +62,18 @@ export default {
           "fab fa-node-js",
           "fab fa-google",
           "fab fa-php"
-        ]
+        ],
+        isSmall:false
       },
       {
-        color: "red",
+        color: "blue",
         year: "2013",
         company: "Orica",
         position: "Software Engineer",
         description:
           "Global applications support for Lotus Domimo applications",
-        skills: ["fab fa-java"]
+        skills: ["fab fa-java"],
+        isSmall:false
       },
       {
         color: "blue",
@@ -80,7 +82,8 @@ export default {
         position: "Software Engineer",
         description:
           "Design, develop and implement a multi-language policy contract generator.",
-        skills: ["fab fa-java"]
+        skills: ["fab fa-java"],
+        isSmall:false
       },
       {
         color: "blue",
@@ -89,15 +92,26 @@ export default {
         position: "Software Engineer",
         description:
           "Design, develop and implement inventory and workflow applications",
-        skills: ["fab fa-java"]
+        skills: ["fab fa-java"],
+        isSmall:false
       },
       {
-        color: "red",
+        color: "blue",
         year: "2008",
         company: "Softweb Consulting",
         position: "Software Engineer",
         description: "Design, develop and implement for various ",
-        skills: ["fab fa-java", "fab fa-php"]
+        skills: ["fab fa-java", "fab fa-php"],
+        isSmall:false
+      },
+      {
+        color: "red",
+        year: "2008",
+        company: "De La Salle University - Manila",
+        position: "Bachelors of Science in Computer Science",
+        description: "Graduated with a major in Software Technology.",
+        skills: [],
+        isSmall:true
       }
     ]
   })

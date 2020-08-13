@@ -8,5 +8,6 @@ Official url - https://ecnop.dev
 ## Highlights
 - Typewriter Animation Effect
 - Word Rotation Animation Effect
-- Fontawesome 5
+- Responsive Timeline Component
+- Social Icons from Fontawesome 5
 

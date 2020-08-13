@@ -9,7 +9,7 @@
         <div
           class="grey--text ma-5 pa-5 align-center text-center text-h5 text-sm-h4"
           style="max-width:85%"
-        >I'll be migrating to Melbourne, Australia on December 2, 2020. I'm actively looking for interesting job opportunities where I can share my and improve my skills further.</div>
+        >I'll be migrating to Melbourne, Australia on December 2, 2020. I'm actively looking for interesting job opportunities where I can share and improve my skills further.</div>
         <v-btn
           dark
           class="green"

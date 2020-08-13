@@ -5,7 +5,7 @@
         <Experience />
         <Work />
         <Contact />
-        <div class="pb-5 text-center text-title">Designed and Built by Jose Mari Ponce</div>
+        <div class="pb-5 text-center text-title green--text font-weight-bold">Designed and Built by Jose Mari Ponce</div>
     </div>
 </template>
 <script>

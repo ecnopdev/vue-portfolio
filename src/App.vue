@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar fixed app color="white" flat v-if="$route.name != 'loading'">
+    <v-app-bar hide-on-scroll fixed app color="white" flat v-if="$route.name != 'loading'">
       <div class="d-flex align-center">
         <v-btn href="https://ecnop.dev" icon>
         <v-img
@@ -41,11 +41,28 @@
       <router-view></router-view>
     </v-main>
 
+    <div class="social-links d-none d-sm-flex">
+          <SocialIcons />
+    </div>
+
     <RightNav ref="rightNav"/>
   </v-app>
 </template>
 
 <style>
+.social-links {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  width: 45px;
+  height: 75vh;
+  display: block;
+  position: fixed;
+  right: 16px;
+  bottom: 0px;
+  padding-right: 16px;
+  text-align: center;
+}
+
 .nav-links div {
   margin-left: 16px;
   cursor:pointer

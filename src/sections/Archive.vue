@@ -1,9 +1,8 @@
 <template>
   <BaseSection>
     <template #header>
-      <div id="work" class="text-h5 text-sm-h4">
-        <span class="green--text">03.</span>
-        Recent Projects
+      <div id="archive" class="text-h5 text-sm-h4">
+        A list of things that I've built
       </div>
     </template>
     <template #content>
@@ -37,12 +36,12 @@ export default {
         {
           name: "Events Submission Portal",
           techStack:
-            "Vue.js, Node.js, Express, App Engine, Cloud Functions, Secret Manager",
+            "Vue.js, Node.js, PWA, App Engine, Cloud Functions, Secret Manager",
           company: "Singapore Press Holdings",
         },
         {
           name: "Job Assignment Management System",
-          techStack: "Vue.js, Google Apps Script, PWA, Firebase, Php",
+          techStack: "Vue.js, Google Apps Script, PWA, Firebase",
           company: "Singapore Press Holdings",
         },
         {
@@ -51,7 +50,7 @@ export default {
           company: "Singapore Press Holdings",
         },
         {
-          name: "Interview Translator and Transcription Portal",
+          name: "Interview Translator and Transcription Service",
           techStack: "Vue.js, Python, Google Apps Script, Compute Engine",
           company: "Singapore Press Holdings",
         },
@@ -61,10 +60,35 @@ export default {
           company: "Singapore Press Holdings",
         },
         {
-          name: "Approval Workflow (Google Form Add-on)",
+          name: "Approval Workflow Service",
           techStack: "Vue.js, Google Apps Script, Google Form Add-on",
           company: "Singapore Press Holdings",
-        }
+        },
+        {
+          name: "Messenger App",
+          techStack: "Angular.js, Ionic, Node.js, Socket.io",
+          company: "Singapore Press Holdings",
+        },
+        {
+          name: "Editorial Productivity System",
+          techStack: "Java Server Faces, jQuery, Dojo Toolkit, Managed Beans",
+          company: "Singapore Press Holdings",
+        },
+        {
+          name: "Editorial Systems Access Request",
+          techStack: "App Maker, Google Drive",
+          company: "Singapore Press Holdings",
+        },
+        {
+          name: "Stylebook",
+          techStack: "App Maker, Google Drive",
+          company: "Singapore Press Holdings",
+        },
+        {
+          name: "Policy Contract Generator - Bahasa",
+          techStack: "Java Enterprise, Adobe",
+          company: "Sun Life Financial",
+        },
       ]
     };
   }

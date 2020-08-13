@@ -39,11 +39,11 @@
 
     <v-main style="scroll-snap-type:y proximity">
       <router-view></router-view>
-    </v-main>
 
-    <div class="social-links d-none d-sm-flex">
+     <div class="social-links d-none d-sm-flex">
           <SocialIcons />
-    </div>
+     </div>
+    </v-main>
 
     <RightNav ref="rightNav"/>
   </v-app>
@@ -91,11 +91,13 @@
 
 <script>
 import RightNav from '@/components/RightNav'
+import SocialIcons from '@/components/SocialIcons'
 
 export default {
   name: "App",
   components: {
-    RightNav
+    RightNav,
+    SocialIcons
   },
 
   data: () => ({

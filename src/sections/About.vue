@@ -11,7 +11,7 @@
         <v-row>
           <v-col cols="12" md="4" class="d-flex flex-row align-center justify-center">
             <div class="profile-picture-container">
-              <v-img class="mx-auto" :src="require('@/assets/profile.jpg')"></v-img>
+              <v-img class="mx-auto" :src="require('@/assets/profile.jpg')" :lazy-src="require('@/assets/profile.jpg')"></v-img>
             </div>
           </v-col>
           <v-col cols="12" md="8" class="px-xs-0">

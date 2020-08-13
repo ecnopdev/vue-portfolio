@@ -27,6 +27,7 @@
 const BaseSection = () => import("@/sections/BaseSection.vue");
 
 export default {
+  name:"Archive",
   components: {
     BaseSection
   },

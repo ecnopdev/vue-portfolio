@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name:"WordRotate",
   data() {
     return {
       words: ["for the web.", "in the cloud.", "using Vue.js.", "using Node.js.", "in Google Cloud"]

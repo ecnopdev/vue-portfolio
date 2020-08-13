@@ -25,6 +25,6 @@
 </style>     
 <script>
 export default {
-    
+    name:"BaseSection"
 }
 </script>

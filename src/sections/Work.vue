@@ -15,9 +15,9 @@
           <v-list-item-content>
             <v-list-item-title class="blue--text title text-wrap">{{project.name}}</v-list-item-title>
             <v-list-item-subtitle class="text-wrap">{{project.company}}</v-list-item-subtitle>
-            <v-list-item-body class="body text-wrap">
+            <v-list-item-content class="body text-wrap">
                 {{project.techStack}}
-            </v-list-item-body>
+            </v-list-item-content>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -28,6 +28,7 @@
 const BaseSection = () => import("@/sections/BaseSection.vue");
 
 export default {
+  name: "Work",
   components: {
     BaseSection
   },

@@ -16,6 +16,7 @@
 </template>
 <script>
 export default {
+    name:"Loading",
     mounted: function(){
         setTimeout(() =>{
             this.$router.push("/main");

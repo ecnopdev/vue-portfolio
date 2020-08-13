@@ -61,28 +61,12 @@
         </v-container>
       </v-col>
       <v-col cols="1" align="right" justify="bottom" align-self="end">
-        <div class="social-links d-none d-sm-flex">
-          <SocialIcons />
-        </div>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <style scoped>
-.social-links {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  width: 45px;
-  height: 75vh;
-  display: block;
-  position: fixed;
-  right: 16px;
-  bottom: 0px;
-  padding-right: 16px;
-  text-align: center;
-}
-
 .description {
   width:400px;
 }
@@ -97,11 +81,9 @@
 <script>
 const Typewriter = () => import("@/components/Typewriter.vue");
 const WordRotate = () => import("@/components/WordRotate.vue");
-const SocialIcons = () => import("@/components/SocialIcons.vue");
 
 export default {
   name: "Home",
-
   data: () => ({
     showName: false,
     showTitle: false,
@@ -110,8 +92,7 @@ export default {
   }),
   components: {
     Typewriter,
-    WordRotate,
-    SocialIcons
+    WordRotate
   },
   mounted: function() {
     setTimeout(() => {

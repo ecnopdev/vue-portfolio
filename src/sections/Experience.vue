@@ -16,6 +16,7 @@ const BaseSection = () => import('@/sections/BaseSection.vue');
 const Timeline = () => import('@/components/Timeline.vue');
 
 export default {
+    name:"Experience",
     components : {
         BaseSection,
         Timeline

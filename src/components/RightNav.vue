@@ -36,6 +36,7 @@
 
 <script>
 export default {
+  name:"RightNav",
   data() {
     return {
       drawer: false,

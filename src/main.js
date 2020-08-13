@@ -22,8 +22,8 @@ const router = new VueRouter({
     component: Loading
   }, {
     path: '/main',
-    name: 'main',
-    component: () => import('@/sections/Main')
+    name: 'root',
+    component: () => import('@/sections/Root')
   },
   {
     path: '/archive',

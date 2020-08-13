@@ -20,7 +20,7 @@
         >
         <v-icon class="mr-4">fa-envelope</v-icon>
         Say Hello</v-btn>
-        <SocialIcons class="mt-5 pt-5 d-xs-only" />
+        <SocialIcons class="mt-5 pt-5 hidden-sm-and-up" />
       </v-container>
     </template>
   </BaseSection>
@@ -30,6 +30,7 @@ const BaseSection = () => import("@/sections/BaseSection.vue");
 const SocialIcons = () => import("@/components/SocialIcons.vue");
 
 export default {
+  name: "Contact",
   components: {
     BaseSection,
     SocialIcons

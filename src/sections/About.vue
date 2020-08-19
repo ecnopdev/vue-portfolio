@@ -68,7 +68,7 @@
                   I got my Bachelor's Degree in
                 <b>Computer Science</b> at
                 <b>De La Salle University Manila</b>, specializing in Software
-                Technology.
+                Technology. I'm currently taking up a <b>Master's Degree</b> in <b>Information Systems</b> at <b>University of the Philippines Open University</b>
                   </p>
                 </v-list-item-content>
               </v-list-item>

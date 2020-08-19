@@ -3,53 +3,52 @@
     <v-app-bar hide-on-scroll fixed app color="white" flat v-if="$route.name != 'loading'">
       <div class="d-flex align-center">
         <v-btn href="https://ecnop.dev" icon>
-        <v-img
-          alt="ecnopdev"
-          class="shrink mr-2"
-          contain
-          :src="require('@/assets/logo3.svg')"
-          transition="scale-transition"
-          width="40"
-        />
+          <v-img
+            alt="ecnopdev"
+            class="shrink mr-2"
+            contain
+            :src="require('@/assets/logo3.svg')"
+            transition="scale-transition"
+            width="40"
+          />
         </v-btn>
       </div>
 
       <v-spacer></v-spacer>
       <transition name="slide-fade">
-      <div class="d-none d-sm-flex flex-row nav-links align-center">
-        <div @click="$vuetify.goTo('#about', scrollOptions)">
-          <span>01.</span> About 
+        <div class="d-none d-sm-flex flex-row nav-links align-center">
+          <div @click="$vuetify.goTo('#about', scrollOptions)">
+            <span>01.</span> About
+          </div>
+          <div @click="$vuetify.goTo('#experience', scrollOptions)">
+            <span>02.</span> Experience
+          </div>
+          <div @click="$vuetify.goTo('#work', scrollOptions)">
+            <span>03.</span> Work
+          </div>
+          <div @click="$vuetify.goTo('#contact', scrollOptions)">
+            <span>04.</span> Contact
+          </div>
+          <v-btn class="ml-3" green outlined href="Jose-Mari-Ponce-CV.pdf" target="_bank">CV</v-btn>
         </div>
-        <div @click="$vuetify.goTo('#experience', scrollOptions)">
-          <span>02.</span> Experience
-        </div>
-        <div @click="$vuetify.goTo('#work', scrollOptions)">
-          <span>03.</span> Work
-        </div>
-        <div @click="$vuetify.goTo('#contact', scrollOptions)">
-          <span>04.</span> Contact
-        </div>
-        <v-btn class="ml-3" green outlined href="Jose-Mari-Ponce-CV.pdf" target="_bank">
-          CV
-        </v-btn>
-      </div>
       </transition>
-      <v-app-bar-nav-icon class="d-flex d-sm-none" @click="toggleDrawer()"/>
+      <v-app-bar-nav-icon class="d-flex d-sm-none" @click="toggleDrawer()" />
     </v-app-bar>
 
-    <v-main style="scroll-snap-type:y proximity">
+    <v-main style="scroll-snap-type:y proximity;position:relative">
       <router-view></router-view>
 
-     <div class="social-links d-none d-sm-flex">
-          <SocialIcons />
-     </div>
+      <div class="social-links d-none d-sm-flex">
+        <SocialIcons />
+      </div>
     </v-main>
 
-    <RightNav ref="rightNav"/>
+    <RightNav ref="rightNav" />
   </v-app>
 </template>
 
 <style>
+
 .social-links {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -65,7 +64,7 @@
 
 .nav-links div {
   margin-left: 16px;
-  cursor:pointer
+  cursor: pointer;
 }
 .nav-links span {
   color: green;
@@ -90,28 +89,28 @@
 </style>
 
 <script>
-import RightNav from '@/components/RightNav'
-import SocialIcons from '@/components/SocialIcons'
+import RightNav from "@/components/RightNav";
+import SocialIcons from "@/components/SocialIcons";
 
 export default {
   name: "App",
   components: {
     RightNav,
-    SocialIcons
+    SocialIcons,
   },
 
   data: () => ({
-    scrollOptions:{
+    scrollOptions: {
       duration: 600,
       offset: 0,
-      easing: 'easeInOutCubic'
-    }
+      easing: "easeInOutCubic",
+    },
   }),
 
-  methods : {
-    toggleDrawer(){
+  methods: {
+    toggleDrawer() {
       this.$refs.rightNav.toggle();
-    }
-  }
+    },
+  },
 };
 </script>

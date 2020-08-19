@@ -1,5 +1,9 @@
 <template>
-  <v-container fluid style="scroll-snap-align:start;height:90vh" class="d-flex align-center">
+  <v-container
+    fluid
+    style="scroll-snap-align:start;height:90vh;position:relative"
+    class="d-flex align-center"
+  >
     <v-row>
       <v-col cols="1"></v-col>
       <v-col cols="11">
@@ -60,20 +64,44 @@
           </v-row>
         </v-container>
       </v-col>
-      <v-col cols="1" align="right" justify="bottom" align-self="end">
-      </v-col>
+      <v-col cols="1" align="right" justify="bottom" align-self="end"></v-col>
     </v-row>
+    <div class="down-arrow" @click="$vuetify.goTo('#about', scrollOptions)">
+      <v-icon href="#about" size="50">fa-chevron-down</v-icon>
+    </div>
   </v-container>
 </template>
 
 <style scoped>
-.description {
-  width:400px;
+.down-arrow {
+  position: absolute;
+  bottom: 0px;
+  width: 80px;
+  height: 80px;
+  left: 50vw;
+  animation: downArrow 0.8s linear infinite;
+  opacity: 0;
 }
 
-@media only screen and (max-width: 599px){
+@keyframes downArrow {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.description {
+  width: 400px;
+}
+
+@media only screen and (max-width: 599px) {
   .description {
-    width:100%;
+    width: 100%;
   }
 }
 </style>
@@ -88,13 +116,17 @@ export default {
     showName: false,
     showTitle: false,
     showBio: false,
-    mailTo: "mailto:ponce.josemari@gmail.com"
+    mailTo: "mailto:ponce.josemari@gmail.com",
+    scrollOptions: {
+      duration: 600,
+      offset: 0,
+    }
   }),
   components: {
     Typewriter,
-    WordRotate
+    WordRotate,
   },
-  mounted: function() {
+  mounted: function () {
     setTimeout(() => {
       this.showName = true;
     }, 300);
@@ -104,6 +136,6 @@ export default {
     setTimeout(() => {
       this.showBio = true;
     }, 700);
-  }
+  },
 };
 </script>

@@ -26,11 +26,11 @@
                   class="company-name font-weight-bold text-title text-sm-h5"
                 >{{experience.company}}
                 </v-card-title>
-                <v-card-subtitle class="d-flex flex-column body-2">
+                <v-card-subtitle class="d-flex flex-column body-2 white--text">
                   <div>{{experience.position}}</div>
                   <div class="hidden-sm-and-up">{{experience.year}}</div>
                 </v-card-subtitle>
-                <v-card-text>{{experience.description}}</v-card-text>
+                <v-card-text class="white--text">{{experience.description}}</v-card-text>
                 <v-card-actions>
                   <v-icon
                     v-for="(skill,i2) in experience.skills"

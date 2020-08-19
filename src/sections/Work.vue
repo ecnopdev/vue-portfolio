@@ -7,15 +7,15 @@
       </div>
     </template>
     <template #content>
-      <v-list two-lines avatar :dense="$vuetify.breakpoint.mobile">
+      <v-list two-lines avatar three-line>
         <v-list-item v-for="(project,i) in projects" :key="i">
           <v-list-item-avatar>
-              <v-icon>fa-code</v-icon>
+              <v-icon>fa-folder-open</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="blue--text title text-wrap">{{project.name}}</v-list-item-title>
+            <v-list-item-title class="green--text title text-wrap">{{project.name}}</v-list-item-title>
             <v-list-item-subtitle class="text-wrap">{{project.company}}</v-list-item-subtitle>
-            <v-list-item-content class="body text-wrap">
+            <v-list-item-content class="caption text-wrap">
                 {{project.techStack}}
             </v-list-item-content>
           </v-list-item-content>

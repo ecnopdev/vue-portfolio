@@ -1,27 +1,33 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col cols="12">
-        <div class="d-flex>">
-          <v-timeline :dense="$vuetify.breakpoint.mobile">
+    <v-row no-gutters>
+      <v-col cols="12 pa-0 ma-0">
+        <div>
+          <v-timeline :dense="$vuetify.breakpoint.mobile" class="pa-0 ma-0">
             <v-timeline-item
               v-for="(experience, i) in experiences"
               :key="i"
               :color="experience.color"
               :small="experience.isSmall"
             >
-              <template v-slot:opposite>
+              <template #icon>
+                <v-avatar>
+                  <v-img :src="require(`@/assets/exp-icons/${experience.companyIcon}`)" />
+                </v-avatar>
+              </template>
+              <template #opposite>
                 <span
                   :class="`headline font-weight-bold ${experience.color}--text`"
                   v-text="experience.year"
                 ></span>
               </template>
-              <v-card class="elevation-2">
+              <v-card class="elevation-2" dark color="green">
                 <v-card-title
                   class="company-name font-weight-bold text-title text-sm-h5"
-                >{{experience.company}}</v-card-title>
+                >{{experience.company}}
+                </v-card-title>
                 <v-card-subtitle class="d-flex flex-column body-2">
-                  <div class="green--text">{{experience.position}}</div>
+                  <div>{{experience.position}}</div>
                   <div class="hidden-sm-and-up">{{experience.year}}</div>
                 </v-card-subtitle>
                 <v-card-text>{{experience.description}}</v-card-text>
@@ -49,13 +55,15 @@
 </style>
 <script>
 export default {
-  name: "Timeline",
+  name: "ExperienceTimeline",
   data: () => ({
     experiences: [
       {
         color: "blue",
         year: "2014 - Present",
         company: "Singapore Press Holdings",
+        companyIcon: "exp-sph.png",
+        website: "https://sph.com.sg",
         position: "Software Engineer",
         description:
           "Design, develop and implement enterprise productivity tools and cloud-native applications for the newsroom. ",
@@ -77,7 +85,8 @@ export default {
       {
         color: "blue",
         year: "2013",
-        company: "Orica",
+        company: "Orica Australia",
+        companyIcon: "exp-orica.png",
         position: "Software Engineer",
         description:
           "Global applications developer and support for Lotus Domino applications.",
@@ -88,6 +97,7 @@ export default {
         color: "blue",
         year: "2011",
         company: "Sun Life of Canada Philippines",
+        companyIcon: "exp-sun-life.png",
         position: "Software Engineer",
         description:
           "Design, develop, implement and maintain a multi-language policy contract generator.",
@@ -98,6 +108,7 @@ export default {
         color: "blue",
         year: "2011",
         company: "Abbott Laboratories",
+        companyIcon: "exp-abbott.png",
         position: "Software Engineer",
         description:
           "Design, develop, implement and maintain workflow applications to support the parmaceutical operations.",
@@ -108,12 +119,13 @@ export default {
         color: "blue",
         year: "2008",
         company: "Softweb Consulting",
+        companyIcon: "exp-softweb.png",
         position: "Software Engineer",
-        description: "Design, develop and implement for complex workflow applications for a wide-range of industries such as Manufacturing, Banking, Human Resources, and Education.",
+        description: "Design, develop and implement complex workflow applications for a wide-range of industries such as Manufacturing, Banking, Human Resources, and Education.",
         skills: [
           { icon: "fab fa-java", name: "Java Server Faces (Xpages)" },
           { icon: "fab fa-php", name: "Codeigniter" },
-          { icon: "fab fa-jira", name: "Jira, Scrum" }
+          { icon: "fab fa-jira", name: "Scrum" }
         ],
         isSmall: false
       },
@@ -121,6 +133,7 @@ export default {
         color: "red",
         year: "2008",
         company: "De La Salle University - Manila",
+        companyIcon: "exp-dlsu.png",
         position: "Bachelors of Science in Computer Science",
         description: "Graduated with a major in Software Technology.",
         skills: [],

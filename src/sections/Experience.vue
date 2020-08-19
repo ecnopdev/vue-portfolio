@@ -7,19 +7,19 @@
       </div>
         </template>
         <template #content>
-            <Timeline />
+            <ExperienceTimeline />
         </template>
     </BaseSection>
 </template>
 <script>
 const BaseSection = () => import('@/sections/BaseSection.vue');
-const Timeline = () => import('@/components/Timeline.vue');
+const ExperienceTimeline = () => import('@/components/ExperienceTimeline.vue');
 
 export default {
     name:"Experience",
     components : {
         BaseSection,
-        Timeline
+        ExperienceTimeline
     }
 }
 </script>

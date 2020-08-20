@@ -16,11 +16,11 @@ export default {
         if (newVal === "Ponce") {
           setTimeout(() => {
             this.message = "ecnoP";
-          }, 4020);
+          }, 4000);
         } else {
           setTimeout(() => {
             this.message = "Ponce";
-          }, 4020);
+          }, 4000);
         }
       },
       immediate: true

@@ -5,7 +5,7 @@
     </template>
     <template #content>
       <v-container class="d-flex flex-column text-center align-center">
-        <div class="text-center text-h4 text-sm-h2">Let's work together</div>
+        <div class="text-center text-h4 text-sm-h2">Get In Touch</div>
         <div
           class="grey--text ma-5 pa-5 align-center text-center text-h5 text-sm-h4"
           style="max-width:85%"

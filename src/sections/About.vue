@@ -40,9 +40,11 @@
                 <v-list-item-content>
                   <p>
                     I am a
-                <b>Software Engineer</b> with over a decade
-                professional experience. Aside from coding, I also enjoy
-                solving puzzles and building things at scale.
+                    <b>Software Engineer</b> with over a decade
+                    professional experience. Aside from
+                    <b>coding</b>, I also enjoy
+                    <b>solving puzzles</b> and
+                    <b>building things</b> at scale.
                   </p>
                 </v-list-item-content>
               </v-list-item>
@@ -52,10 +54,10 @@
                 </v-list-item-icon>
                 <v-list-item-content>
                   <p>
-                  My current technology stack comprises of
-                <b>Vue.js</b>,
-                <b>Node.js</b> and
-                <b>Google Cloud Platform</b>.
+                    My current technology stack comprises of
+                    <b>Vue.js</b>,
+                    <b>Node.js</b> and
+                    <b>Google Cloud Platform</b>.
                   </p>
                 </v-list-item-content>
               </v-list-item>
@@ -65,10 +67,13 @@
                 </v-list-item-icon>
                 <v-list-item-content>
                   <p>
-                  I got my Bachelor's Degree in
-                <b>Computer Science</b> at
-                <b>De La Salle University Manila</b>, specializing in Software
-                Technology. I'm currently taking up a <b>Master's Degree</b> in <b>Information Systems</b> at <b>University of the Philippines Open University</b>
+                    I got my Bachelor's Degree in
+                    <b>Computer Science</b> at
+                    <b>De La Salle University Manila</b>, specializing in Software
+                    Technology. I'm currently taking up a
+                    <b>Master's Degree</b> in
+                    <b>Information Systems</b> at
+                    <b>University of the Philippines Open University</b>
                   </p>
                 </v-list-item-content>
               </v-list-item>
@@ -78,9 +83,11 @@
                 </v-list-item-icon>
                 <v-list-item-content>
                   <p>
-                  I'm a <b>dad</b> of two, a <b>gamer</b> and an
-                <b>amateur multi-instrumentatlist</b>, who plays basic
-                keyboards, guitar, harmonica and flute.
+                    I'm a
+                    <b>dad</b> of two, a
+                    <b>gamer</b> and an
+                    <b>amateur multi-instrumentatlist</b>, who plays basic
+                    keyboards, guitar, harmonica and flute.
                   </p>
                 </v-list-item-content>
               </v-list-item>

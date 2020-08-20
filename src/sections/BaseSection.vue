@@ -20,7 +20,7 @@
 <style scoped>
 .section-container {
     scroll-snap-align:start;
-    min-height:90vh;
+    min-height:95vh;
 }
 </style>     
 <script>

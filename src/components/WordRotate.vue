@@ -9,7 +9,7 @@ export default {
   name:"WordRotate",
   data() {
     return {
-      words: ["for the web.", "in the cloud.", "using Vue.js.", "using Node.js.", "in Google Cloud"]
+      words: ["for the web.", "in the cloud.", "using Vue.js.", "using Node.js.", "in Google Cloud."]
     };
   },
   methods: {}
@@ -22,7 +22,7 @@ export default {
   display:inline-block;
   overflow:visible;
   width:auto;
-  width:450px;
+  width:458px;
   height:1em;
 }
 

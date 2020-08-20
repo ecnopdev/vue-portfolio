@@ -2,7 +2,7 @@
   <v-container
     fluid
     style="scroll-snap-align:start;height:90vh;position:relative"
-    class="d-flex align-center"
+    class="d-flex align-start"
   >
     <v-row>
       <v-col cols="1"></v-col>
@@ -67,7 +67,7 @@
       <v-col cols="1" align="right" justify="bottom" align-self="end"></v-col>
     </v-row>
     <div class="down-arrow" @click="$vuetify.goTo('#about', scrollOptions)">
-      <v-icon href="#about" size="50">fa-chevron-down</v-icon>
+      <v-icon href="#about" size="50px">fa-chevron-down</v-icon>
     </div>
   </v-container>
 </template>
@@ -78,7 +78,7 @@
   bottom: 0px;
   width: 80px;
   height: 80px;
-  left: 50vw;
+  left: calc(50vw - 10px);
   animation: downArrow 0.8s linear infinite;
   opacity: 0;
 }

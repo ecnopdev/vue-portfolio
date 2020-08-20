@@ -78,7 +78,7 @@
   bottom: 0px;
   width: 80px;
   height: 80px;
-  left: calc(50vw - 10px);
+  left: calc(50vw - 20px);
   animation: downArrow 0.8s linear infinite;
   opacity: 0;
 }

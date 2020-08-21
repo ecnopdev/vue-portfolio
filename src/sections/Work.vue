@@ -9,7 +9,7 @@
     <template #content>
       <v-row >
         <v-col cols="12" md="7">
-          <v-list two-lines avatar three-line>
+          <v-list two-lines avatar three-line color="transparent" :dark="isDark">
             <v-list-item v-for="(project,i) in projects" :key="i">
               <v-list-item-avatar>
                 <v-icon>fa-folder-open</v-icon>
@@ -93,7 +93,7 @@
             <v-col col="11" class="skill-container">
               <div class="skill">SCRUM</div>
               <div class="skill">JIRA</div>
-              <div class="skill">Conflucence</div>
+              <div class="skill">Confluence</div>
               <div class="skill">GSuite</div>
             </v-col>
           </v-row>
@@ -134,6 +134,7 @@
    background-color:rgb(232, 232, 232);
    border:1px lightgrey solid;
    font-size:1em;
+   color:black;
  }
 </style>
 <script>
@@ -144,6 +145,7 @@ export default {
   components: {
     BaseSection,
   },
+  props: {isDark:Boolean},
   data() {
     return {
       projects: [

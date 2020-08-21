@@ -9,7 +9,10 @@ export default {
   name:"WordRotate",
   data() {
     return {
-      words: ["for the web.", "in the cloud.", "using Vue.js.", "using Node.js.", "in Google Cloud."]
+      words: ["for the web.",  
+              "using Vue.js.", 
+              "using Node.js.", 
+              "with Google Cloud."]
     };
   },
   methods: {}
@@ -22,7 +25,7 @@ export default {
   display:inline-block;
   overflow:visible;
   width:auto;
-  width:458px;
+  width:540px;
   height:1em;
 }
 
@@ -37,7 +40,7 @@ export default {
   overflow: hidden;
   top:7px;
   opacity:0;
-  animation: animate 10s linear infinite;
+  animation: animate 8s linear infinite;
   height:130px
 }
 
@@ -62,11 +65,10 @@ export default {
 
 .rotate-text:nth-child(1) {
   animation-delay: 0s;
-  color:black;
 }
 .rotate-text:nth-child(2) {
   animation-delay: 2s;
-  color:black;
+  color:#4fc08d;
 }
 .rotate-text:nth-child(3) {
   animation-delay: 4s;
@@ -74,10 +76,6 @@ export default {
 }
 .rotate-text:nth-child(4) {
   animation-delay: 6s;
-  color:#4fc08d;
-}
-.rotate-text:nth-child(5) {
-  animation-delay: 8s;
   color:#1a73e8;
 }
 </style>

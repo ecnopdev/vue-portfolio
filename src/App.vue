@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar hide-on-scroll fixed app color="white" flat v-if="$route.name != 'loading'">
-      <div class="d-flex align-center">
+    <v-app-bar hide-on-scroll fixed app :dark="isDark" flat v-if="$route.name != 'loading'">
+      <div class="d-flex align-center justify-center">
         <v-btn href="https://ecnop.dev" icon>
           <v-img
             alt="ecnopdev"
@@ -13,7 +13,12 @@
           />
         </v-btn>
       </div>
-
+      <v-spacer></v-spacer>
+        <v-switch v-model="isDark" class="d-flex d-sm-none mt-5">
+          <template #prepend>
+              <v-icon :color="themeColor">fas fa-moon</v-icon>
+          </template>
+        </v-switch>
       <v-spacer></v-spacer>
       <transition name="slide-fade">
         <div class="d-none d-sm-flex flex-row nav-links align-center">
@@ -36,10 +41,16 @@
     </v-app-bar>
 
     <v-main style="scroll-snap-type:y proximity;position:relative">
-      <router-view></router-view>
+      <router-view :isDark="isDark"></router-view>
 
       <div class="social-links d-none d-sm-flex">
-        <SocialIcons />
+        <SocialIcons :isDark="isDark"/>
+      </div>
+
+      <div class="theme-toggle d-none d-sm-flex flex-row align-center justify-center">
+        <v-icon class="mr-3" :color="themeColor">fas fa-moon</v-icon>
+        <v-switch v-model="isDark">
+        </v-switch>
       </div>
     </v-main>
 
@@ -60,6 +71,16 @@
   bottom: 0px;
   padding-right: 16px;
   text-align: center;
+}
+
+.theme-toggle{
+  transform:rotate(90deg);
+  width:80px;
+  height:150px;
+  position:fixed;
+  display:block;
+  bottom:0px;
+  left:0px;
 }
 
 .nav-links div {
@@ -105,7 +126,15 @@ export default {
       offset: 0,
       easing: "easeInOutCubic",
     },
+    isDark:false
   }),
+
+  computed: {
+    themeColor(){
+      return this.isDark ? 'yellow' : 'blue lighten-3';
+    }
+
+  },
 
   methods: {
     toggleDrawer() {

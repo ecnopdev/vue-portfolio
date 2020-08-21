@@ -19,7 +19,7 @@
           target="_blank"
         >
         <v-icon class="mr-4">fa-envelope</v-icon>
-        Say Hello</v-btn>
+        CONNECT</v-btn>
         <SocialIcons class="mt-5 pt-5 hidden-sm-and-up" />
       </v-container>
     </template>

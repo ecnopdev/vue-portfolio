@@ -1,18 +1,22 @@
 <template>
-  <div>
-    <Home />
-    <About />
+  <div :class="theme">
+    <Home :isDark="isDark" />
+    <About :isDark="isDark"/>
     <Experience />
-    <Work />
+    <Work :isDark="isDark"/>
     <Contact />
-    <div class="pb-5 text-center text-title font-weight-bold repo-link">
+    <div :class="[theme,'pb-5','text-center','text-title','font-weight-bold','repo-link']">
       <a href="https://github.com/ecnopdev/vue-portfolio" target="_blank">
-        <v-icon class="mr-2">fab fa-github</v-icon>Designed and Built by Jose Mari Ponce
+        <v-icon :dark="isDark" class="mr-2">fab fa-github</v-icon>
+        <span>Designed and Built by Jose Mari Ponce</span>
       </a>
     </div>
   </div>
 </template>
 <style scoped>
+.white-text {
+  color:white;
+}
 .repo-link a {
     text-decoration:none;
     opacity:0.8;
@@ -33,12 +37,18 @@ const Contact = () => import("@/sections/Contact.vue");
 
 export default {
   name: "Root",
+  props: {'isDark':Boolean},
   components: {
     Home,
     About,
     Experience,
     Work,
     Contact
+  },
+  computed: {
+    theme(){
+      return this.isDark ? ['secondary','white-text'] : '';    
+    }
   }
 };
 </script>

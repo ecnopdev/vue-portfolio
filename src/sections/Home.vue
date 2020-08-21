@@ -1,8 +1,9 @@
 <template>
   <v-container
     fluid
-    style="scroll-snap-align:start;height:90vh;position:relative"
+    style="height:100vh;position:relative"
     class="d-flex align-start"
+    color="primary"
   >
     <v-row>
       <v-col cols="1"></v-col>
@@ -67,7 +68,7 @@
       <v-col cols="1" align="right" justify="bottom" align-self="end"></v-col>
     </v-row>
     <div class="down-arrow" @click="$vuetify.goTo('#about', scrollOptions)">
-      <v-icon href="#about" size="50px">fa-chevron-down</v-icon>
+      <v-icon :dark="isDark" href="#about" size="50px">fa-chevron-down</v-icon>
     </div>
   </v-container>
 </template>
@@ -75,7 +76,7 @@
 <style scoped>
 .down-arrow {
   position: absolute;
-  bottom: 0px;
+  bottom: 60px;
   width: 80px;
   height: 80px;
   left: calc(50vw - 20px);
@@ -112,6 +113,7 @@ const WordRotate = () => import("@/components/WordRotate.vue");
 
 export default {
   name: "Home",
+  props: ['isDark'],
   data: () => ({
     showName: false,
     showTitle: false,
@@ -127,6 +129,7 @@ export default {
     WordRotate,
   },
   mounted: function () {
+
     setTimeout(() => {
       this.showName = true;
     }, 300);

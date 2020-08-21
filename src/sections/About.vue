@@ -19,7 +19,7 @@
             </div>
           </v-col>
           <v-col cols="12" md="8" class="px-xs-0">
-            <v-list>
+            <v-list color="transparent" :dark="isDark">
               <v-list-item>
                 <v-list-item-icon>
                   <v-icon color="green">fa-user-tag</v-icon>
@@ -40,8 +40,7 @@
                 <v-list-item-content>
                   <p>
                     I am a
-                    <b>Software Engineer</b> with over a decade
-                    professional experience. Aside from
+                    <b>Software Engineer</b> based in <b>Singapore</b> (moving to <b>Melbourne</b> soon) specializing in <b>web development</b> and <b>cloud engineering</b>. Aside from
                     <b>coding</b>, I also enjoy
                     <b>solving puzzles</b> and
                     <b>building things</b> at scale.
@@ -111,6 +110,7 @@
 const BaseSection = () => import("@/sections/BaseSection");
 export default {
   name: "About",
+  props: {isDark:Boolean},
   components: {
     BaseSection,
   },

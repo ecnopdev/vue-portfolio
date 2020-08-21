@@ -7,7 +7,7 @@
       target="_blank"
       :href="item.link"
     >
-      <v-icon :title="item.name" class="social-icon" size="30">{{item.icon}}</v-icon>
+      <v-icon :dark="isDark" :title="item.name" class="social-icon" size="30">{{item.icon}}</v-icon>
     </a>
   </div>
 </template>
@@ -49,6 +49,7 @@
 <script>
 export default {
   name:"SocialIcons",
+  props:{'isDark':Boolean},
   data() {
     return {
       icons: [ 

@@ -36,7 +36,7 @@ export default {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  border-right: 2px solid rgba(131, 131, 131, 0.75);
   top: 7px;
 }
 
@@ -53,22 +53,25 @@ export default {
 
 @keyframes typewriter {
   0% {
-    width: 0em;
+    width: 0px;
   }
   10% {
-    width: 3em;
+    width: 0px;
+  }
+  20% {
+    width: 2.97em;
   }
   40% {
-    width: 3em;
+    width: 2.97em;
   }
   50% {
     width: 0em;
   }
   60% {
-    width: 3em;
+    width: 2.97em;
   }
   90% {
-    width: 3em;
+    width: 2.97em;
   }
   100% {
     width: 0em;

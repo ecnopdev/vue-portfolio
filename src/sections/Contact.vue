@@ -20,7 +20,7 @@
         >
         <v-icon class="mr-4">fa-envelope</v-icon>
         CONNECT</v-btn>
-        <SocialIcons class="mt-5 pt-5 hidden-sm-and-up" />
+        <SocialIcons :isDark="isDark" class="mt-5 pt-5 hidden-sm-and-up" />
       </v-container>
     </template>
   </BaseSection>
@@ -34,6 +34,7 @@ export default {
   components: {
     BaseSection,
     SocialIcons
-  }
+  },
+  props:{'isDark':Boolean}
 };
 </script>

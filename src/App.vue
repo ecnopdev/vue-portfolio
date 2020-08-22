@@ -88,7 +88,7 @@
   cursor: pointer;
 }
 .nav-links span {
-  color: green;
+  color: rgb(15, 167, 46);
   font-weight: bold;
 }
 .nav-links div:hover {

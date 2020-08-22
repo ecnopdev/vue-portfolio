@@ -22,7 +22,7 @@
             </v-list-item>
           </v-list>
         </v-col>
-        <v-col cols="12" md="5" fill-height>
+        <v-col cols="12" md="5" class="px-sm-7 px-md-0" fill-height>
           <v-row class="skill-group-container green lighten-5">
             <v-col cols="1" class="green skill-header-container d-flex flex-column align-center justify-center">
                <div class="skill-header">Front-End</div>

@@ -4,7 +4,7 @@
     <About :isDark="isDark"/>
     <Experience />
     <Work :isDark="isDark"/>
-    <Contact />
+    <Contact :isDark="isDark" />
     <div :class="[theme,'pb-5','text-center','text-title','font-weight-bold','repo-link']">
       <a href="https://github.com/ecnopdev/vue-portfolio" target="_blank">
         <v-icon :dark="isDark" class="mr-2">fab fa-github</v-icon>

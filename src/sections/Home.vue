@@ -26,7 +26,7 @@
                 <h2
                   transition="fade-transition"
                   v-if="showTitle"
-                  class="text-h4 text-sm-h2 font-weight-bold mb-5 grey--text"
+                  class="text-h4 text-sm-h3 font-weight-bold mb-5 grey--text"
                 >
                   I build things
                   <WordRotate />

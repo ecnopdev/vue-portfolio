@@ -5,7 +5,7 @@
     class="d-flex align-start"
     color="primary"
   >
-    <v-row>
+    <v-row class="mt-5">
       <v-col cols="1"></v-col>
       <v-col cols="11">
         <v-container>

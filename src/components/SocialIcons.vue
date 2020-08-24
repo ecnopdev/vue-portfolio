@@ -76,7 +76,7 @@ export default {
         {
           name: "Instagram",
           icon: "fab fa-instagram",
-          link: "https://www.instagram.com/ecnopdev/"
+          link: "https://www.instagram.com/ecnop.dev/"
         },
         {
           name: "Medium",

@@ -3,7 +3,7 @@
     <template #header>
       <div id="work" class="text-h5 text-sm-h4">
         <span class="green--text">03.</span>
-        Recent Projects and Skills
+        Projects and Skills
       </div>
     </template>
     <template #content>
@@ -152,7 +152,7 @@ export default {
         {
           name: "Events Submission Portal",
           techStack:
-            "Vue.js, Node.js, Express, App Engine, Cloud Functions, Secret Manager",
+            "Vue.js, Express, App Engine, Cloud Functions, Secret Manager",
           company: "Singapore Press Holdings",
         },
         {

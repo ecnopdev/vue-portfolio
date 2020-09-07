@@ -2,12 +2,14 @@
   <BaseSection>
     <template #header>
       <div id="work" class="text-h5 text-sm-h4">
-        <span class="green--text">03.</span>
+        <span class="green--text">
+          03.
+        </span>
         Projects and Skills
       </div>
     </template>
     <template #content>
-      <v-row >
+      <v-row>
         <v-col cols="12" md="7">
           <v-list two-lines avatar three-line color="transparent" :dark="isDark">
             <v-list-item v-for="(project,i) in projects" :key="i">
@@ -24,8 +26,11 @@
         </v-col>
         <v-col cols="12" md="5" class="px-sm-7 px-md-0" fill-height>
           <v-row class="skill-group-container green lighten-5">
-            <v-col cols="1" class="green skill-header-container d-flex flex-column align-center justify-center">
-               <div class="skill-header">Front-End</div>
+            <v-col
+              cols="1"
+              class="green skill-header-container d-flex flex-column align-center justify-center"
+            >
+              <div class="skill-header">Front-End</div>
             </v-col>
             <v-col col="11" class="skill-container">
               <div class="skill">Vue.js</div>
@@ -42,7 +47,7 @@
           </v-row>
           <v-row class="skill-group-container brown lighten-5">
             <v-col cols="1" class="brown skill-header-container">
-               <div class="skill-header">Back-End</div>
+              <div class="skill-header">Back-End</div>
             </v-col>
             <v-col col="11" class="skill-container">
               <div class="skill">Node.js</div>
@@ -56,7 +61,7 @@
           </v-row>
           <v-row class="skill-group-container amber lighten-5">
             <v-col cols="1" class="amber skill-header-container">
-               <div class="skill-header">Storage</div>
+              <div class="skill-header">Storage</div>
             </v-col>
             <v-col col="11" class="skill-container">
               <div class="skill">Firebase</div>
@@ -65,11 +70,11 @@
               <div class="skill">Memorystore</div>
               <div class="skill">Google Drive</div>
               <div class="skill">Elasticsearch</div>
-            </v-col>      
+            </v-col>
           </v-row>
           <v-row class="skill-group-container blue lighten-5">
             <v-col cols="1" class="blue skill-header-container">
-               <div class="skill-header">DevOps</div>
+              <div class="skill-header">DevOps</div>
             </v-col>
             <v-col col="11" class="skill-container">
               <div class="skill">VSCode</div>
@@ -88,7 +93,7 @@
           </v-row>
           <v-row class="skill-group-container red lighten-5">
             <v-col cols="1" class="red skill-header-container">
-               <div class="skill-header">Tracking</div>
+              <div class="skill-header">Tracking</div>
             </v-col>
             <v-col col="11" class="skill-container">
               <div class="skill">SCRUM</div>
@@ -103,39 +108,39 @@
   </BaseSection>
 </template>
 <style>
- .skill-group-container{
-   min-height:100px;
-   display:flex;
-   flex-direction:row;
- }
- .skill-header-container{
-   position:relative;
-   display:flex;
-   flex-direction:column;
-   justify-content:center !important;
-   align-items:center !important;
- }
- .skill-header{
-  position:relative;
-  color:white;
-  font-weight:bold;
-  transform:rotate(90deg);
-  display:block;
-  width:80px;
-  text-align:center;
- }
- .skill-container{
-   align-self:center;
- }
- .skill{
-   display:inline-block;
-   padding:5px;
-   margin:5px;
-   background-color:rgb(232, 232, 232);
-   border:1px lightgrey solid;
-   font-size:1em;
-   color:black;
- }
+.skill-group-container {
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.skill-header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.skill-header {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  transform: rotate(90deg);
+  display: block;
+  width: 80px;
+  text-align: center;
+}
+.skill-container {
+  align-self: center;
+}
+.skill {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(232, 232, 232);
+  border: 1px lightgrey solid;
+  font-size: 1em;
+  color: black;
+}
 </style>
 <script>
 const BaseSection = () => import("@/sections/BaseSection.vue");
@@ -145,7 +150,7 @@ export default {
   components: {
     BaseSection,
   },
-  props: {isDark:Boolean},
+  props: { isDark: Boolean },
   data() {
     return {
       projects: [

@@ -3,9 +3,11 @@ Official url - https://ecnop.dev
 
 ## Built using:
 - Vue.js
-- Vuetify 
+- Vuetify
+- Vue Router 
 
 ## Highlights
+- Light and Dark Theme toggle
 - Typewriter Animation Effect
 - Word Rotation Animation Effect
 - Responsive Timeline Component

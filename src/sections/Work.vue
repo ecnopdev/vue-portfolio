@@ -2,24 +2,34 @@
   <BaseSection>
     <template #header>
       <div id="work" class="text-h5 text-sm-h4">
-        <span class="green--text">
-          03.
-        </span>
+        <span class="green--text"> 03. </span>
         Projects and Skills
       </div>
     </template>
     <template #content>
       <v-row>
         <v-col cols="12" md="7">
-          <v-list two-lines avatar three-line color="transparent" :dark="isDark">
-            <v-list-item v-for="(project,i) in projects" :key="i">
+          <v-list
+            two-lines
+            avatar
+            three-line
+            color="transparent"
+            :dark="isDark"
+          >
+            <v-list-item v-for="(project, i) in projects" :key="i">
               <v-list-item-avatar>
                 <v-icon>fa-folder-open</v-icon>
               </v-list-item-avatar>
               <v-list-item-content>
-                <v-list-item-title class="green--text title text-wrap">{{project.name}}</v-list-item-title>
-                <v-list-item-subtitle class="text-wrap">{{project.company}}</v-list-item-subtitle>
-                <v-list-item-content class="caption text-wrap">{{project.techStack}}</v-list-item-content>
+                <v-list-item-title class="green--text title text-wrap">{{
+                  project.name
+                }}</v-list-item-title>
+                <v-list-item-subtitle class="text-wrap">{{
+                  project.company
+                }}</v-list-item-subtitle>
+                <v-list-item-content class="caption text-wrap">{{
+                  project.techStack
+                }}</v-list-item-content>
               </v-list-item-content>
             </v-list-item>
           </v-list>
@@ -35,14 +45,21 @@
             <v-col col="11" class="skill-container">
               <div class="skill">Vue.js</div>
               <div class="skill">Vuetify</div>
-              <div class="skill">jQuery Mobile</div>
-              <div class="skill">Angular.js</div>
-              <div class="skill">Ionic</div>
               <div class="skill">SPA</div>
               <div class="skill">PWA</div>
               <div class="skill">ES6</div>
-              <div class="skill">GSuite Add-ons</div>
-              <div class="skill">XPages</div>
+              <div class="skill">TypeScript</div>
+              <div class="badge">
+                <a
+                  href="https://www.testdome.com/cert/64074e8503944ea1bfc94a76262c0b58"
+                  title="Vue.js (Hard) - View Certificate"
+                >
+                  <img
+                    width="80px"
+                    :src="require('@/assets/rsz_1rsz_testdome_icon_small.png')"
+                  />
+                </a>
+              </div>
             </v-col>
           </v-row>
           <v-row class="skill-group-container brown lighten-5">
@@ -52,11 +69,18 @@
             <v-col col="11" class="skill-container">
               <div class="skill">Node.js</div>
               <div class="skill">Express</div>
-              <div class="skill">REST</div>
               <div class="skill">Google Apps Script</div>
               <div class="skill">Php</div>
-              <div class="skill">Python</div>
-              <div class="skill">Java Server Faces</div>
+              <div class="badge">
+                <a
+                  href="https://www.hackerrank.com/certificates/fc0052f09b74"
+                  target="_blank"
+                  style="text-decoration: none"
+                  title="Rest API (Intermediate) - View Certificate"
+                >
+                  <v-icon size="60" color="green">fab fa-hackerrank</v-icon>
+                </a>
+              </div>
             </v-col>
           </v-row>
           <v-row class="skill-group-container amber lighten-5">
@@ -89,6 +113,17 @@
               <div class="skill">Key Management Service</div>
               <div class="skill">clasp</div>
               <div class="skill">npm</div>
+              <div class="badge">
+                <a
+                  href="https://www.credential.net/b1ecebb6-4578-473e-8d38-88d8e94feabd"
+                  target="_blank"
+                  title="Associate Cloud Engineer - View Certificate"
+                >
+                  <img
+                    src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/23739250"
+                  />
+                </a>
+              </div>
             </v-col>
           </v-row>
           <v-row class="skill-group-container red lighten-5">
@@ -100,6 +135,15 @@
               <div class="skill">JIRA</div>
               <div class="skill">Confluence</div>
               <div class="skill">GSuite</div>
+              <div class="badge">
+                <a
+                  href="Jose Mari Ponce-ScrumAlliance_CSM_Certificate.pdf"
+                  target="_blank"
+                  title="Certified Scrum Master - View Certificate"
+                >
+                  <img :src="require('@/assets/seal-csm.png')" />
+                </a>
+              </div>
             </v-col>
           </v-row>
         </v-col>
@@ -136,10 +180,26 @@
   display: inline-block;
   padding: 5px;
   margin: 5px;
-  background-color: rgb(232, 232, 232);
-  border: 1px lightgrey solid;
+  background-color: rgb(58, 58, 58);
+  border: 1px rgb(80, 80, 80) solid;
   font-size: 1em;
-  color: black;
+  color: rgb(252, 252, 252);
+}
+
+.badge img {
+  width: 60px;
+}
+
+/* Set the image to fill its parent and make transparent */
+.center-cropped img {
+  min-height: 100%;
+  min-width: 100%;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* modern browsers */
+  opacity: 0;
 }
 </style>
 <script>

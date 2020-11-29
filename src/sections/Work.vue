@@ -101,7 +101,6 @@
               <div class="skill-header">DevOps</div>
             </v-col>
             <v-col col="11" class="skill-container">
-              <div class="skill">VSCode</div>
               <div class="skill">Github</div>
               <div class="skill">Docker</div>
               <div class="skill">Cloud SDK</div>
@@ -111,8 +110,6 @@
               <div class="skill">Compute Engine</div>
               <div class="skill">Secret Manager</div>
               <div class="skill">Key Management Service</div>
-              <div class="skill">clasp</div>
-              <div class="skill">npm</div>
               <div class="badge">
                 <a
                   href="https://www.credential.net/b1ecebb6-4578-473e-8d38-88d8e94feabd"
@@ -128,13 +125,14 @@
           </v-row>
           <v-row class="skill-group-container red lighten-5">
             <v-col cols="1" class="red skill-header-container">
-              <div class="skill-header">Tracking</div>
+              <div class="skill-header">Tools</div>
             </v-col>
             <v-col col="11" class="skill-container">
               <div class="skill">SCRUM</div>
               <div class="skill">JIRA</div>
               <div class="skill">Confluence</div>
-              <div class="skill">GSuite</div>
+              <div class="skill">Google Workplace</div>
+              <div class="skill">VSCode</div>
               <div class="badge">
                 <a
                   href="Jose Mari Ponce-ScrumAlliance_CSM_Certificate.pdf"
